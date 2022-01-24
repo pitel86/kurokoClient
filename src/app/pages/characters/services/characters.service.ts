@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CharactersService {
-  public charactersURL: string = "http://localhost:5000/api/characters";
+  // public charactersURL: string = "http://localhost:5000/api/characters";
+  public charactersURL: string = "https://kuroko-server.vercel.app/api/characters";
 
   constructor(private httpClient: HttpClient) { }
   

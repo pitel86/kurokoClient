@@ -5,7 +5,8 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class TeamsService {
-  public teamsURL: string = "http://localhost:5000/api/teams";
+  // public teamsURL: string = "http://localhost:5000/api/teams";
+  public teamsURL: string = "https://kuroko-server.vercel.app/api/teams";
 
   constructor(private httpClient: HttpClient) { }
   public getAllTeams() {
