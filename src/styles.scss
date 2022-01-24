@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Iceland&display=swap');
+
+//tipos
+$audio: 'Audiowide', cursive;
+$ice: 'Iceland', cursive;
+
+//PALETTE
+$primary-color: #1a1a1a;
+$secondary-color: #f0f0f0;
+$transparent: #1a1a1a80;
+$blue: #2853ae;
+$lightblue:#a9d9fc;
+$red: #ff1f19;
+$orange: #faa73b;
+$pink: #ff68b5;
+$background: #1a1a1a;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $audio;
+    font-family: $ice;
+}
+
+body{
+    background-color: $transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+}
+

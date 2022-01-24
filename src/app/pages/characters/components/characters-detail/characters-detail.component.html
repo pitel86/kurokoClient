@@ -1,0 +1,22 @@
+<div class="characters">    
+    <div *ngIf="character" class="character-container">
+        <div class="character-container__card">
+            <div class="character-container__card--img">
+               <img src="{{character.image}}" alt="{{character.name}}"> 
+            </div>
+            <div class="character-container__card--info">
+                <h6>{{character.name}}</h6>
+                <p>Age: {{ character.age }}</p>
+                <p>Position: {{ character.position }}</p>
+                <p>Dorsal: {{ character.dorsal }}</p>
+                <p>Team: {{ character.teams }}</p>
+                <p>Abilities: </p>
+                <ul>
+                    <li *ngFor="let item of character.abilities">
+                        {{ item }}
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+</div>

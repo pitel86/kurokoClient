@@ -1,0 +1,63 @@
+@import "../../../styles.scss";
+
+.characters{
+    padding:30px 15px;
+    
+    h2{
+        color: $orange;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+        margin: 15px;
+        font-family: $audio;
+    }
+    
+    .character-container {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    
+      &__card {
+        border: solid 2px $lightblue;
+        border-radius: 10px;
+        background-image: url("https://res.cloudinary.com/dpeadveub/image/upload/v1642933501/kuroko/bg_movie_ezdmyk.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 20px;
+        height: 400px;
+        width: 20%;
+        max-width:400px;
+        position: relative;
+
+        h6 {
+            position: absolute;
+            bottom: 0;
+          padding: 10px;
+          border-radius: 7px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          color: $blue;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 0;
+          width: calc(100% - 20px);
+          max-width:400px;
+          background-color: $orange;
+          font-size: 1.8rem;
+        }
+    
+        img{
+            object-fit: contain;
+            width:75%; 
+        }
+    
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+}

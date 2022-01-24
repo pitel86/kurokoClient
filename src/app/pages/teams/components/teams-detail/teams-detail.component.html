@@ -1,0 +1,15 @@
+<div class="teams">
+    <div *ngIf="team" class="team-container">
+        <div class="team-container__card">
+            <div class="team-container__card--img">
+               <img src="{{team.image}}" alt="{{team.name}}"> 
+            </div>
+            <div class="team-container__card--info">
+                <h6>{{team.name}}</h6>
+                <p>City: {{team.city }}</p>
+                <p>Captain: {{ team.captain }}</p>
+                <p>Coach: {{ team.coach }}</p>   
+            </div>
+        </div>
+    </div>
+</div>

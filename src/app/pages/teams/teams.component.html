@@ -1,0 +1,11 @@
+<div class="teams">
+    <h2>Teams</h2>
+    <div *ngIf="teams.length" class="team-container">
+        <div *ngFor="let team of teams" class="team-container__card" routerLink="{{team._id}}">
+            <h6>{{team.name}}</h6>
+            <div class="team-container__card--img">
+               <img src="{{team.image}}" alt="{{team.name}}"> 
+            </div>
+        </div>
+    </div>
+</div>
